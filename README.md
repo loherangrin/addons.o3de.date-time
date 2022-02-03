@@ -1,3 +1,4 @@
+
 # Date & Time Gem
 This extension (*gem*) for [O3DE (Open 3D Engine)](https://www.o3de.org) provides a set of classes and components to work with time. Its modular architecture allows to instance at runtime only what you need:
 
@@ -16,7 +17,7 @@ This extension (*gem*) for [O3DE (Open 3D Engine)](https://www.o3de.org) provide
 - Multiple helper classes to define how an alarm can be repeated multiple times, setting its repeating interval (e.g. `Every <X> Minutes`, `Every <X> Months`) or its end condition (e.g. `For <N> Times`, `Not After <Y>`). Date rules can be combined with time rules to achieve complex schedules of actions.
 - A convenient widget with constrained fields to assist setting alarms directly from the editor interface, without the need to write any line of code.
 
-*VIDEO*
+https://user-images.githubusercontent.com/51530087/152420323-805b6248-991e-4565-bdc4-5f25b217fb95.mp4
 
 ## Install
 Please choose one of the following options to install this gem in your O3DE projects:
