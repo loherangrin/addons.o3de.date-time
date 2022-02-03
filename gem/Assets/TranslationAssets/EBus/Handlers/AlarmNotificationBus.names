@@ -1,0 +1,35 @@
+{
+    "entries": [
+        {
+            "base": "AlarmNotificationBus",
+            "context": "EBusHandler",
+            "variant": "",
+            "details": {
+                "name": "Alarm Notifications",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "OnAlarmBell",
+                    "details": {
+                        "name": "On Alarm Bell"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

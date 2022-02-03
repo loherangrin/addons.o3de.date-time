@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "TimeChange_Second",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Second",
+                "category": "Date & Time/Constants/Time Change"
+            },
+            "methods": [
+                {
+                    "base": "GetTimeChange_Second",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Second"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

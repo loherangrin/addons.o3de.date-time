@@ -1,0 +1,61 @@
+{
+    "entries": [
+        {
+            "base": "DateRequestBus",
+            "context": "EBusSender",
+            "variant": "",
+            "details": {
+                "name": "Date Requests",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "GetCurrentDate",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get Current Date"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get Current Date is invoked"
+                    },
+                    "details": {
+                        "name": "Get Current Date"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date",
+                                "tooltip": "Current date in the scene"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetCurrentDate",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Set Current Date"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Set Current Date is invoked"
+                    },
+                    "details": {
+                        "name": "Set Current Date"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date",
+                                "tooltip": "New value to set as current date"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

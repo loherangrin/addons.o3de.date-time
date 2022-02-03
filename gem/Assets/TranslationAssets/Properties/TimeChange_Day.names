@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "TimeChange_Day",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Day",
+                "category": "Date & Time/Constants/Time Change"
+            },
+            "methods": [
+                {
+                    "base": "GetTimeChange_Day",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Day"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+set(FILES
+    Include/DateTime/Constants/DateTimeConstants.hpp
+    Include/DateTime/EBuses/AlarmBus.hpp
+    Include/DateTime/EBuses/DateBus.hpp
+    Include/DateTime/EBuses/TimeBus.hpp
+    Include/DateTime/Types/Alarm.hpp
+    Include/DateTime/Types/Date.cpp
+    Include/DateTime/Types/Date.hpp
+    Include/DateTime/Types/GregorianCalendar.cpp
+    Include/DateTime/Types/GregorianCalendar.hpp
+    Include/DateTime/Types/RecurrenceRules.hpp
+    Include/DateTime/Types/RecurrenceRules.inl
+    Include/DateTime/Types/Time.cpp
+    Include/DateTime/Types/Time.hpp
+    Include/DateTime/Utils/DateTimeMath.hpp
+    Include/DateTime/Utils/DateTimeMath.inl
+    Source/Components/AlarmComponent.cpp
+    Source/Components/AlarmComponent.hpp
+    Source/Components/AlarmComponentConfig.cpp
+    Source/Components/AlarmComponentConfig.hpp
+    Source/Components/AlarmComponentConfig.inl
+    Source/Components/DateComponent.cpp
+    Source/Components/DateComponent.hpp
+    Source/Components/DateComponentConfig.cpp
+    Source/Components/DateComponentConfig.hpp
+    Source/Components/TimeComponent.cpp
+    Source/Components/TimeComponent.hpp
+    Source/Components/TimeComponentConfig.cpp
+    Source/Components/TimeComponentConfig.hpp
+    Source/EBuses/DateInternalBus.hpp
+    Source/Types/Alarm.cpp
+    Source/Types/Alarm.hpp
+    Source/Types/Alarm.inl
+    Source/Types/AlarmHandle.cpp
+    Source/Types/AlarmHandle.hpp
+    Source/DateTimeModuleInterface.hpp
+)

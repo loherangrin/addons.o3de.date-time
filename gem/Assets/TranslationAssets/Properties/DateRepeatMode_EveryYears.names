@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "DateRepeatMode_EveryYears",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Every <X> Years",
+                "category": "Date & Time/Constants/Date Repeat Mode"
+            },
+            "methods": [
+                {
+                    "base": "GetDateRepeatMode_EveryYears",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Every <X> Years"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Repeat Mode"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

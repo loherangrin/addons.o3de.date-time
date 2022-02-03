@@ -1,0 +1,216 @@
+{
+    "entries": [
+        {
+            "base": "TimeRequestBus",
+            "context": "EBusSender",
+            "variant": "",
+            "details": {
+                "name": "Time Requests"
+            },
+            "methods": [
+                {
+                    "base": "SetTimeSpeed",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Set Time Speed"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Set Time Speed is invoked"
+                    },
+                    "details": {
+                        "name": "Set Time Speed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Speed",
+                                "tooltip": "New value to set as time speed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "ConvertToSceneTime",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Convert To Scene Time"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Convert To Scene Time is invoked"
+                    },
+                    "details": {
+                        "name": "Convert To Scene Time"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds (Real)",
+                                "tooltip": "Amount of seconds in real world time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds (Scene)",
+                                "tooltip": "The conversion result expressed in scene-time seconds"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetTimeScale",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Set Time Scale"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Set Time Scale is invoked"
+                    },
+                    "details": {
+                        "name": "Set Time Scale"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Scale",
+                                "tooltip": "New value to set as time scale"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetCurrentTime",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Set Current Time"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Set Current Time is invoked"
+                    },
+                    "details": {
+                        "name": "Set Current Time"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time",
+                                "tooltip": "New value to set as current time"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "ConvertToRealTime",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Convert To Real Time"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Convert To Real Time is invoked"
+                    },
+                    "details": {
+                        "name": "Convert To Real Time"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds (Scene)",
+                                "tooltip": "Amount of seconds in scene time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds (Real)",
+                                "tooltip": "The conversion result expressed in real-time seconds"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetTimeScale",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get Time Scale"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get Time Scale is invoked"
+                    },
+                    "details": {
+                        "name": "Get Time Scale"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Scale",
+                                "tooltip": "The current value of time scale"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetTimeSpeed",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get Time Speed"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get Time Speed is invoked"
+                    },
+                    "details": {
+                        "name": "Get Time Speed"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Speed",
+                                "tooltip": "The current value of time speed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetCurrentTime",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get Current Time"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get Current Time is invoked"
+                    },
+                    "details": {
+                        "name": "Get Current Time"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time",
+                                "tooltip": "The current time"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

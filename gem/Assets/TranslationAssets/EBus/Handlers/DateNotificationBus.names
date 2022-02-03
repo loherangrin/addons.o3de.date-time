@@ -1,0 +1,71 @@
+{
+    "entries": [
+        {
+            "base": "DateNotificationBus",
+            "context": "EBusHandler",
+            "variant": "",
+            "details": {
+                "name": "Date Notifications",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "OnDateYearChanged",
+                    "details": {
+                        "name": "On Year Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnDateMonthChanged",
+                    "details": {
+                        "name": "On Month Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnDateDayChanged",
+                    "details": {
+                        "name": "On Day Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnDateReset",
+                    "details": {
+                        "name": "On Date Reset"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,99 @@
+{
+    "entries": [
+        {
+            "base": "TimeNotificationBus",
+            "context": "EBusHandler",
+            "variant": "",
+            "details": {
+                "name": "Time Notifications",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "OnTimeHourChanged",
+                    "details": {
+                        "name": "On Hour Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnTimeMinuteChanged",
+                    "details": {
+                        "name": "On Minute Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnTimeSecondChanged",
+                    "details": {
+                        "name": "On Second Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnTimeScaleChanged",
+                    "details": {
+                        "name": "On Time Scale Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Time Scale"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnTimeSpeedChanged",
+                    "details": {
+                        "name": "On Time Speed Changed"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Time Speed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "OnTimeReset",
+                    "details": {
+                        "name": "On Time Reset"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

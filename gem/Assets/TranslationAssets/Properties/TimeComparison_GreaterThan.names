@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "TimeComparison_GreaterThan",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Greater Than",
+                "category": "Date & Time/Constants/Time Comparison"
+            },
+            "methods": [
+                {
+                    "base": "GetTimeComparison_GreaterThan",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Greater Than"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Comparison"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

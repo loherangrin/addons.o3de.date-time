@@ -1,0 +1,21 @@
+{
+    "project_name": "Loherangrin_DateTime_CppExample",
+    "project_id": "{B177A5D4-A050-4891-9334-0C32F46AA615}",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/loherangrin/addons.o3de.date-time/blob/main/LICENSE",
+    "origin": "Loherangrin",
+    "origin_url": "https://github.com/loherangrin/addons.o3de.date-time",
+    "display_name": "DateTime_CppExample",
+    "summary": "A demo scene of 'Date Time' Gem using C++",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "Gameplay",
+        "Sample",
+        "Time"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de",
+    "external_subdirectories": []
+}

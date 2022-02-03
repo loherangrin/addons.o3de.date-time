@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "DateComparison_LessThan",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Less Than",
+                "category": "Date & Time/Constants/Date Comparison"
+            },
+            "methods": [
+                {
+                    "base": "GetDateComparison_LessThan",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Less Than"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Comparison"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

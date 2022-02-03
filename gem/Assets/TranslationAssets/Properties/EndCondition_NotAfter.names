@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "EndCondition_NotAfter",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Not After <Y>",
+                "category": "Date & Time/Constants/End Condition"
+            },
+            "methods": [
+                {
+                    "base": "GetEndCondition_NotAfter",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Not After <Y>"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "End Condition"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

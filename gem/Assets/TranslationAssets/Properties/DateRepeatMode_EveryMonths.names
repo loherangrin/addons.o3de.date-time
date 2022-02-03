@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "DateRepeatMode_EveryMonths",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Every <X> Months",
+                "category": "Date & Time/Constants/Date Repeat Mode"
+            },
+            "methods": [
+                {
+                    "base": "GetDateRepeatMode_EveryMonths",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Every <X> Months"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Repeat Mode"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

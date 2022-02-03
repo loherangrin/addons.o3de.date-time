@@ -1,0 +1,981 @@
+{
+    "entries": [
+        {
+            "base": "Time",
+            "context": "BehaviorClass",
+            "variant": "",
+            "details": {
+                "name": "Time"
+            },
+            "methods": [
+                {
+                    "base": "SubtractSecond",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Second"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Second is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Second"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "ToString",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke To String"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after To String is invoked"
+                    },
+                    "details": {
+                        "name": "To String"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}",
+                            "details": {
+                                "name": "String"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddMinutes",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Minutes"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Minutes is invoked"
+                    },
+                    "details": {
+                        "name": "Add Minutes"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Minutes",
+                                "tooltip": "Amount of minutes to be added"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractHours",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Hours"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Hours is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Hours"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Hours",
+                                "tooltip": "Amount of hours to be subtracted"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractSeconds",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Amount of seconds to be subtracted"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CountHoursTo",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Count Hours To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Count Hours To is invoked"
+                    },
+                    "details": {
+                        "name": "Count Hours"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "From",
+                                "tooltip": "Source time"
+                            }
+                        },
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "To",
+                                "tooltip": "Target time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Hours",
+                                "tooltip": "Amount of hours between the two times"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddHours",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Hours"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Hours is invoked"
+                    },
+                    "details": {
+                        "name": "Add Hours"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time",
+                                "tooltip": "Second operand of the comparison"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Hours",
+                                "tooltip": "Amount of hours to be added"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddSeconds",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "Add Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Amount of seconds to be added"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "FromSeconds",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke From Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after From Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "From Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Amount of seconds to convert from"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Remainder",
+                                "tooltip": "Remaining fraction of seconds that cannot be round to a second"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "LessThan",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Less Than"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Less Than is invoked"
+                    },
+                    "details": {
+                        "name": "Less Than"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Boolean"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddSecond",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Second"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Second is invoked"
+                    },
+                    "details": {
+                        "name": "Add Second"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractMinutes",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Minutes"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Minutes is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Minutes"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Minutes",
+                                "tooltip": "Amount of minutes to be subtracted"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "ToSeconds",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke To Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after To Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "To Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Resulting seconds"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddMinute",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Minute"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Minute is invoked"
+                    },
+                    "details": {
+                        "name": "Add Minute"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractHour",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Hour"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Hour is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Hour"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractMinute",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Minute"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Minute is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Minute"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "MoveBySeconds",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Move By Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Move By Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "Move By Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Offset",
+                                "tooltip": "Amount of seconds to move the current time from"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{1FE47D87-0773-539E-92E6-E3F1E621F7AE}",
+                            "details": {
+                                "name": "Pair <Remainder, Date Change>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CountMinutesTo",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Count Minutes To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Count Minutes To is invoked"
+                    },
+                    "details": {
+                        "name": "Count Minutes"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "From",
+                                "tooltip": "Source time"
+                            }
+                        },
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "To",
+                                "tooltip": "Target time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Minutes",
+                                "tooltip": "Amount of minutes between the two times"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddHour",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Hour"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Hour is invoked"
+                    },
+                    "details": {
+                        "name": "Add Hour"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CountSecondsTo",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Count Seconds To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Count Seconds To is invoked"
+                    },
+                    "details": {
+                        "name": "Count Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "From",
+                                "tooltip": "Source time"
+                            }
+                        },
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "To",
+                                "tooltip": "Target time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Amount of seconds between the two times"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "Format",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Format"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Format is invoked"
+                    },
+                    "details": {
+                        "name": "Format"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}",
+                            "details": {
+                                "name": "Pattern",
+                                "tooltip": "A list of specifiers (syntax: %<char>)"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}",
+                            "details": {
+                                "name": "String",
+                                "tooltip": "Formatted string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "IsValid",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Is Valid"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Is Valid is invoked"
+                    },
+                    "details": {
+                        "name": "Is Valid"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Valid",
+                                "tooltip": "True if all time fields are valid"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CompareTo",
+                    "context": "Time",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Compare To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Compare To is invoked"
+                    },
+                    "details": {
+                        "name": "Compare"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time A",
+                                "tooltip": "First operand of the comparison"
+                            }
+                        },
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time B",
+                                "tooltip": "Second operand of the comparison"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{58422C0E-1E47-4854-98E6-34098F6FE12D}",
+                            "details": {
+                                "name": "Time Comparison",
+                                "tooltip": "Result of the comparison"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetHours",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Hours"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Hours",
+                                "tooltip": "Number of hours"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetHours",
+                    "context": "Setter",
+                    "details": {
+                        "name": "Set Hours"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Hours",
+                                "tooltip": "New number of hours"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetMinutes",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Minutes"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Minutes",
+                                "tooltip": "Number of minutes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetMinutes",
+                    "context": "Setter",
+                    "details": {
+                        "name": "Set Minutes"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Minutes",
+                                "tooltip": "New number of minutes"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetSeconds",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Number of seconds"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetSeconds",
+                    "context": "Setter",
+                    "details": {
+                        "name": "Set Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Number of seconds"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

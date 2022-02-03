@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "EndCondition_Infinite",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Infinite",
+                "category": "Date & Time/Constants/End Condition"
+            },
+            "methods": [
+                {
+                    "base": "Infinite",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Infinite"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "End Condition"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

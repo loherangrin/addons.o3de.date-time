@@ -1,0 +1,21 @@
+{
+    "project_name": "Loherangrin_DateTime_ScriptCanvasExample",
+    "project_id": "{D00A4D0F-2A52-470E-8D6C-8E4F87A409FC}",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/loherangrin/addons.o3de.date-time/blob/main/LICENSE",
+    "origin": "Loherangrin",
+    "origin_url": "https://github.com/loherangrin/addons.o3de.date-time",
+    "display_name": "DateTime_ScriptCanvasExample",
+    "summary": "A demo scene of 'Date Time' Gem using ScriptCanvas",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "Gameplay",
+        "Sample",
+        "Time"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de",
+    "external_subdirectories": []
+}

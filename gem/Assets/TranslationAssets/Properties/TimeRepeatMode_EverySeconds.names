@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "TimeRepeatMode_EverySeconds",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Every <X> Seconds",
+                "category": "Date & Time/Constants/Time Repeat Mode"
+            },
+            "methods": [
+                {
+                    "base": "GetTimeRepeatMode_EverySeconds",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Every <X> Seconds"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Repeat Mode"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

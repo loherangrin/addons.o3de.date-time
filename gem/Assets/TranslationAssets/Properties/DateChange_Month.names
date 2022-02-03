@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "DateChange_Month",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Month",
+                "category": "Date & Time/Constants/Date Change"
+            },
+            "methods": [
+                {
+                    "base": "GetDateChange_Month",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Month"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

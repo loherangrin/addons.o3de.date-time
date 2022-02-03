@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "TimeComparison_Equal",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "Equal",
+                "category": "Date & Time/Constants/Time Comparison"
+            },
+            "methods": [
+                {
+                    "base": "GetTimeComparison_Equal",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Equal"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Comparison"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

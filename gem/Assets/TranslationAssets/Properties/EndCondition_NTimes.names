@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "EndCondition_NTimes",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "For <N> Times",
+                "category": "Date & Time/Constants/End Condition"
+            },
+            "methods": [
+                {
+                    "base": "GetEndCondition_NTimes",
+                    "context": "Getter",
+                    "details": {
+                        "name": "For <N> Times"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "End Condition"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

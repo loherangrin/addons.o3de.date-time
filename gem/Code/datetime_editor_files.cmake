@@ -1,0 +1,14 @@
+set(FILES
+    Include/DateTime/Constants/DateTimeEditorConstants.hpp
+    Source/EditorLevelComponents/DateTimeEditorLevelComponent.cpp
+    Source/EditorLevelComponents/DateTimeEditorLevelComponent.hpp
+    Source/EditorSystemComponents/DateTimeEditorSystemComponent.cpp
+    Source/EditorSystemComponents/DateTimeEditorSystemComponent.hpp
+    Source/Widgets/BaseDateTimeEditWidget.cpp
+    Source/Widgets/BaseDateTimeEditWidget.hpp
+    Source/Widgets/BaseDateTimeEditWidget.inl
+    Source/Widgets/DateEditWidget.cpp
+    Source/Widgets/DateEditWidget.hpp
+    Source/Widgets/TimeEditWidget.cpp
+    Source/Widgets/TimeEditWidget.hpp
+)

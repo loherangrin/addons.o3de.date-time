@@ -1,0 +1,82 @@
+{
+    "entries": [
+        {
+            "base": "DateRecurrenceRuleFactory",
+            "context": "BehaviorClass",
+            "variant": "",
+            "details": {
+                "name": "Recurrence Rules",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "CreateRecurrenceRule",
+                    "context": "DateRecurrenceRuleFactory",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Create Recurrence Rule"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Create Recurrence Rule is invoked"
+                    },
+                    "details": {
+                        "name": "Create Date Recurrence Rule"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Start Date",
+                                "tooltip": "Date of the first repeat"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Repeat Mode",
+                                "tooltip": "How repeats are calculated"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Interval",
+                                "tooltip": "Difference between two repeats. It is ignored if 'Repeat Mode' is set to 'Infinite'"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "End Condition",
+                                "tooltip": "Condition to stop repeating"
+                            }
+                        },
+                        {
+                            "typeid": "{ECA0B403-C4F8-4B86-95FC-81688D046E40}",
+                            "details": {
+                                "name": "Times",
+                                "tooltip": "How many repeats are created after the first one (excluded). It is evaluated only if 'End Condition' is set to 'For N Times'"
+                            }
+                        },
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "End Date",
+                                "tooltip": "Date of the last repeat. It is evaluated only if 'End Condition' is set to 'Not After'"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{91EDFF90-F0F2-47B4-84B2-A91E3AA70C92}",
+                            "details": {
+                                "name": "Date Recurrence Rule"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

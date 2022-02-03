@@ -1,0 +1,238 @@
+{
+    "entries": [
+        {
+            "base": "AlarmRequestBus",
+            "context": "EBusSender",
+            "variant": "",
+            "details": {
+                "name": "Alarm Requests",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "GetNextAlarmDate",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get Next Alarm Date"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get Next Alarm Date is invoked"
+                    },
+                    "details": {
+                        "name": "Get Next Alarm Date"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date",
+                                "tooltip": "Date of the next alarm"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SilenceAllAlarms",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Silence All Alarms"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Silence All Alarms is invoked"
+                    },
+                    "details": {
+                        "name": "Silence All Alarms"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Silent",
+                                "tooltip": "When true, the alarm the alarm is run but no action is executed when any of its repeats goes off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetWhenNextAlarm",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get When Next Alarm"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get When Next Alarm is invoked"
+                    },
+                    "details": {
+                        "name": "Get When Next Alarm"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{AF6CD612-1027-5574-A9A6-C2540B7DE9E7}",
+                            "details": {
+                                "name": "Pair <Date, Time>",
+                                "tooltip": "Date and time of the next alarm (if any)"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CancelAllAlarms",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Cancel All Alarms"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Cancel All Alarms is invoked"
+                    },
+                    "details": {
+                        "name": "Cancel All Alarms"
+                    }
+                },
+                {
+                    "base": "CancelAlarm",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Cancel Alarm"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Cancel Alarm is invoked"
+                    },
+                    "details": {
+                        "name": "Cancel Alarm"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{43DA906B-7DEF-4CA8-9790-854106D3F983}",
+                            "details": {
+                                "name": "Alarm Id",
+                                "tooltip": "Identifier of the alarm"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Success",
+                                "tooltip": "True when the operation was completed successfully"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetAlarmToNotify",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Set Alarm To Notify"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Set Alarm To Notify is invoked"
+                    },
+                    "details": {
+                        "name": "Set Alarm To Notify"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{91EDFF90-F0F2-47B4-84B2-A91E3AA70C92}",
+                            "details": {
+                                "name": "Date Recurrence Rule",
+                                "tooltip": "The recurrence rule to pick the date of the next repeat after that the current one is gone off"
+                            }
+                        },
+                        {
+                            "typeid": "{65D17BDF-34FD-4970-BA76-6AB5B0BE2409}",
+                            "details": {
+                                "name": "Time Recurrence Rule",
+                                "tooltip": "The recurrence rule to pick the time of the next repeat after that the current one is gone off"
+                            }
+                        },
+                        {
+                            "typeid": "{6383F1D3-BB27-4E6B-A49A-6409B2059EAA}",
+                            "details": {
+                                "name": "Requester",
+                                "tooltip": "Reference to the entity that need to be notified"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{43DA906B-7DEF-4CA8-9790-854106D3F983}",
+                            "details": {
+                                "name": "Alarm Id",
+                                "tooltip": "Identifier of the new alarm. When failed, it is set to 0"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SilenceAlarm",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Silence Alarm"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Silence Alarm is invoked"
+                    },
+                    "details": {
+                        "name": "Silence Alarm"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{43DA906B-7DEF-4CA8-9790-854106D3F983}",
+                            "details": {
+                                "name": "Alarm Id",
+                                "tooltip": "Identifier of the alarm"
+                            }
+                        },
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Silent",
+                                "tooltip": "When true, the alarm the alarm is run but no action is executed when any of its repeats goes off"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Success",
+                                "tooltip": "True when the operation was completed successfully"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetNextAlarmTime",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get Next Alarm Time"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get Next Alarm Time is invoked"
+                    },
+                    "details": {
+                        "name": "Get Next Alarm Time"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Time",
+                                "tooltip": "Time of the next alarm (if any)"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

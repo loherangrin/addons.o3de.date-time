@@ -1,0 +1,21 @@
+{
+    "project_name": "Loherangrin_DateTime_LuaExample",
+    "project_id": "{13FF4B98-1536-4BF0-8A6E-162FFA1717FB}",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/loherangrin/addons.o3de.date-time/blob/main/LICENSE",
+    "origin": "Loherangrin",
+    "origin_url": "https://github.com/loherangrin/addons.o3de.date-time",
+    "display_name": "DateTime_LuaExample",
+    "summary": "A demo scene of 'Date Time' Gem using Lua",
+    "canonical_tags": [
+        "Project"
+    ],
+    "user_tags": [
+        "Gameplay",
+        "Sample",
+        "Time"
+    ],
+    "icon_path": "preview.png",
+    "engine": "o3de",
+    "external_subdirectories": []
+}

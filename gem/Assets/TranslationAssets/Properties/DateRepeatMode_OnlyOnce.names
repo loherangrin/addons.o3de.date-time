@@ -1,0 +1,30 @@
+{
+    "entries": [
+        {
+            "base": "DateRepeatMode_OnlyOnce",
+            "context": "Constant",
+            "variant": "",
+            "details": {
+                "name": "No Repeat (Only Once)",
+                "category": "Date & Time/Constants/Date Repeat Mode"
+            },
+            "methods": [
+                {
+                    "base": "GetDateRepeatMode_OnlyOnce",
+                    "context": "Getter",
+                    "details": {
+                        "name": "No Repeat (Only Once)"
+                    },
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Repeat Mode"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

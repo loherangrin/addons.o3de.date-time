@@ -1,0 +1,11 @@
+{
+    "engine": {
+        "branch": "main",
+        "repository": "https://github.com/o3de/o3de.git"
+    },
+    "gems": [
+        {
+            "relative_path": "../../gem"
+        }
+    ]
+}

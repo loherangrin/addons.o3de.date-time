@@ -1,0 +1,82 @@
+{
+    "entries": [
+        {
+            "base": "TimeRecurrenceRuleFactory",
+            "context": "BehaviorClass",
+            "variant": "",
+            "details": {
+                "name": "Recurrence Rules",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "CreateRecurrenceRule",
+                    "context": "TimeRecurrenceRuleFactory",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Create Recurrence Rule"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Create Recurrence Rule is invoked"
+                    },
+                    "details": {
+                        "name": "Create Time Recurrence Rule"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "Start Time",
+                                "tooltip": "Time of the first repeat"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Time Repeat Mode",
+                                "tooltip": "How repeats are calculated"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Interval",
+                                "tooltip": "Difference between two repeats. It is ignored if 'Repeat Mode' is set to 'Infinite'"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "End Condition",
+                                "tooltip": "Condition to stop repeating"
+                            }
+                        },
+                        {
+                            "typeid": "{ECA0B403-C4F8-4B86-95FC-81688D046E40}",
+                            "details": {
+                                "name": "Times",
+                                "tooltip": "How many repeats are created after the first one (excluded). It is evaluated only if 'End Condition' is set to 'For N Times'"
+                            }
+                        },
+                        {
+                            "typeid": "{7E0E6142-2ED0-48A1-BF5F-2D42DD6120AA}",
+                            "details": {
+                                "name": "End Time",
+                                "tooltip": "Time of the last repeat. It is evaluated only if 'End Condition' is set to 'Not After'"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{65D17BDF-34FD-4970-BA76-6AB5B0BE2409}",
+                            "details": {
+                                "name": "Time Recurrence Rule"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

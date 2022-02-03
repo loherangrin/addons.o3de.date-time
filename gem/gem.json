@@ -1,0 +1,20 @@
+{
+    "gem_name": "Loherangrin_DateTime",
+    "display_name": "Date & Time",
+    "license": "Apache-2.0",
+    "license_url": "https://github.com/loherangrin/addons.o3de.date-time/blob/main/LICENSE",
+    "origin": "Loherangrin",
+    "origin_url": "https://github.com/loherangrin/addons.o3de.date-time",
+    "type": "Code",
+    "summary": "A set of components to work with time and dates, using an event-driven approach",
+    "canonical_tags": [
+        "Gem"
+    ],
+    "user_tags": [
+        "Gameplay",
+        "Time",
+        "Utility"
+    ],
+    "icon_path": "preview.png",
+    "requirements": ""
+}

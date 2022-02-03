@@ -1,0 +1,1091 @@
+{
+    "entries": [
+        {
+            "base": "Date",
+            "context": "BehaviorClass",
+            "variant": "",
+            "details": {
+                "name": "Date",
+                "category": "Date & Time"
+            },
+            "methods": [
+                {
+                    "base": "ToString",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke To String"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after To String is invoked"
+                    },
+                    "details": {
+                        "name": "To String"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}",
+                            "details": {
+                                "name": "String"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractDay",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Day"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Day is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Day"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the date that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractYears",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Years"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Years is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Years"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Years",
+                                "tooltip": "Amount of years to be subtracted"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the date that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "Format",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Format"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Format is invoked"
+                    },
+                    "details": {
+                        "name": "Format"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}",
+                            "details": {
+                                "name": "Pattern",
+                                "tooltip": "A list of specifiers (syntax: %<char>)"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}",
+                            "details": {
+                                "name": "String",
+                                "tooltip": "Formatted string"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetLastMonthDay",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Get Last Month Day"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Get Last Month Day is invoked"
+                    },
+                    "details": {
+                        "name": "Get Last Month Day"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "params": [
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Month",
+                                "tooltip": "Month number"
+                            }
+                        },
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Year",
+                                "tooltip": "Year number"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Day",
+                                "tooltip": "Day number"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddYears",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Years"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Years is invoked"
+                    },
+                    "details": {
+                        "name": "Add Years"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Years",
+                                "tooltip": "Amount of years to be added"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the date that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "ToSeconds",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke To Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after To Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "To Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Epoch",
+                                "tooltip": "The starting date which output seconds will start from"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Resulting seconds"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CountYearsTo",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Count Years To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Count Years To is invoked"
+                    },
+                    "details": {
+                        "name": "Count Years"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "From",
+                                "tooltip": "Source date"
+                            }
+                        },
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "To",
+                                "tooltip": "Target date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}",
+                            "details": {
+                                "name": "Years",
+                                "tooltip": "Amount of years between the two dates"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddMonths",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Months"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Months is invoked"
+                    },
+                    "details": {
+                        "name": "Add Months"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Months",
+                                "tooltip": "Amount of months to be added"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractMonth",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Month"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Month is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Month"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "FromSeconds",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke From Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after From Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "From Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Seconds",
+                                "tooltip": "Amount of seconds to convert from"
+                            }
+                        },
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Epoch",
+                                "tooltip": "The starting date which output seconds will start from"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Remainder",
+                                "tooltip": "Remaining seconds that cannot be round to a day"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CountDaysTo",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Count Days To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Count Days To is invoked"
+                    },
+                    "details": {
+                        "name": "Count Days"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "From",
+                                "tooltip": "Source date"
+                            }
+                        },
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "To",
+                                "tooltip": "Target date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}",
+                            "details": {
+                                "name": "Days",
+                                "tooltip": "Amount of days between the two dates"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CountMonthsTo",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Count Months To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Count Months To is invoked"
+                    },
+                    "details": {
+                        "name": "Count Months"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "From",
+                                "tooltip": "Source date"
+                            }
+                        },                    
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "To",
+                                "tooltip": "Target date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72039442-EB38-4D42-A1AD-CB68F7E0EEF6}",
+                            "details": {
+                                "name": "Months",
+                                "tooltip": "Amount of months between the two dates"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "LessThan",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Less Than"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Less Than is invoked"
+                    },
+                    "details": {
+                        "name": "Less Than"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Boolean"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddMonth",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Month"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Month is invoked"
+                    },
+                    "details": {
+                        "name": "Add Month"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractMonths",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Months"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Months is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Months"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Months",
+                                "tooltip": "Amount of months to be subtracted"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddDay",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Day"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Day is invoked"
+                    },
+                    "details": {
+                        "name": "Add Day"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddYear",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Year"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Year is invoked"
+                    },
+                    "details": {
+                        "name": "Add Year"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "AddDays",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Add Days"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Add Days is invoked"
+                    },
+                    "details": {
+                        "name": "Add Days"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Days",
+                                "tooltip": "Amount of days to be added"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractYear",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Year"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Year is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Year"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "MoveBySeconds",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Move By Seconds"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Move By Seconds is invoked"
+                    },
+                    "details": {
+                        "name": "Move By Seconds"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{EA2C3E90-AFBE-44D4-A90D-FAAF79BAF93D}",
+                            "details": {
+                                "name": "Offset",
+                                "tooltip": "Amount of seconds to move the current date from"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{2DDF0064-3EAE-5D1F-97D8-371C0B016616}",
+                            "details": {
+                                "name": "Pair <Remainder, Date Change>"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "IsValid",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Is Valid"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Is Valid is invoked"
+                    },
+                    "details": {
+                        "name": "Is Valid"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{A0CA880C-AFE4-43CB-926C-59AC48496112}",
+                            "details": {
+                                "name": "Valid",
+                                "tooltip": "True if all date fields are valid"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SubtractDays",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Subtract Days"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Subtract Days is invoked"
+                    },
+                    "details": {
+                        "name": "Subtract Days"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Days",
+                                "tooltip": "Amount of days to be subtracted"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Date Change",
+                                "tooltip": "Most significant field of the time that is changed"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "CompareTo",
+                    "context": "Date",
+                    "entry": {
+                        "name": "In",
+                        "tooltip": "When signaled, this will invoke Compare To"
+                    },
+                    "exit": {
+                        "name": "Out",
+                        "tooltip": "Signaled after Compare To is invoked"
+                    },
+                    "details": {
+                        "name": "Compare"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date A",
+                                "tooltip": "First operand of the comparison"
+                            }
+                        },
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date B",
+                                "tooltip": "Second operand of the comparison"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{58422C0E-1E47-4854-98E6-34098F6FE12D}",
+                            "details": {
+                                "name": "Date Comparison",
+                                "tooltip": "Result of the comparison"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetYear",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Year"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Year",
+                                "tooltip": "Number of the year"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetYear",
+                    "context": "Setter",
+                    "details": {
+                        "name": "Set Year"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{B8A56D56-A10D-4DCE-9F63-405EE243DD3C}",
+                            "details": {
+                                "name": "Year",
+                                "tooltip": "New number of the year"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetWeek",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Week"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Week",
+                                "tooltip": "Number of the week in the month"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetMonthNumber",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Month Number"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Month (Number)",
+                                "tooltip": "Number of the month"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetMonthNumber",
+                    "context": "Setter",
+                    "details": {
+                        "name": "Set Month Number"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Month",
+                                "tooltip": "New number of the month"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetMonthName",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Month Name"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{03AAAB3F-5C47-5A66-9EBC-D5FA4DB353C9}",
+                            "details": {
+                                "name": "Month (Name)",
+                                "tooltip": "Name of the month"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "GetDayNumber",
+                    "context": "Getter",
+                    "details": {
+                        "name": "Get Day Number"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        }
+                    ],
+                    "results": [
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Day",
+                                "tooltip": "Number of the day in the month"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "base": "SetDayNumber",
+                    "context": "Setter",
+                    "details": {
+                        "name": "Set Day Number"
+                    },
+                    "params": [
+                        {
+                            "typeid": "{29E845C9-96FA-46B2-9755-8367F56D4CF3}",
+                            "details": {
+                                "name": "Date"
+                            }
+                        },
+                        {
+                            "typeid": "{72B9409A-7D1A-4831-9CFE-FCB3FADD3426}",
+                            "details": {
+                                "name": "Day",
+                                "tooltip": "New number of the day in the month"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
